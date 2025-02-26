@@ -17,6 +17,7 @@ header{
     ul{
         list-style: none;
         display: flex;
+        font-size: large;
         gap: 50px;
         cursor: pointer;
         margin-top: 20px;
@@ -67,7 +68,7 @@ header{
    
 
     .iphone{
-        width: 200px;
+        width: 250px;
         object-fit: cover;
     }
 }
@@ -83,7 +84,10 @@ header{
     .s img{
         width: 75px;
         display: flex;
-        transition: 1s; 
+        transition: 1.2s; 
+    }
+    .s img:hover{
+        transform: scale(1.4);
     }
   
     ul{
