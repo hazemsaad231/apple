@@ -6,32 +6,38 @@ let iphone4 = document.querySelector("#ipone4")
 let iphone5 = document.querySelector("#ipone5")
 
 
+window.onload = function() {
+    const savedColor = localStorage.getItem("backgroundColor");
+    const savedImage = localStorage.getItem("backgroundImage");
+    if (savedColor, savedImage) {
+        document.body.style.background = savedColor;
+        image.src = savedImage;
+    }
+};
 
-function ap1(){
-    document.body.style.background = "#FFA500";
-    image.src="img/0.png"
+function setBackground(color, imagePath) {
+    document.body.style.background = color;
+    localStorage.setItem("backgroundColor", color);
+    localStorage.setItem("backgroundImage", imagePath);
+    image.src = imagePath;
 }
 
-function ap2(){
-    document.body.style.background = "#ADD8E6";
-    image.src="img/1.png"
-    
+function ap1() {
+    setBackground("#FFA500", "img/0.png");
 }
 
-function ap3(){
-    document.body.style.background = "#808080";
-    image.src="img/2.png"
-    
+function ap2() {
+    setBackground("#ADD8E6", "img/1.png");
 }
 
-function ap4(){
-    document.body.style.background = "wheat";
-    image.src="img/3.png"
+function ap3() {
+    setBackground("#808080", "img/2.png");
 }
 
-function ap5(){
-    document.body.style.background = "red";
-    image.src="img/4.png"
+function ap4() {
+    setBackground("wheat", "img/3.png");
 }
 
-
+function ap5() {
+    setBackground("red", "img/4.png");
+}

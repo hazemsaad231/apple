@@ -1,5 +1,5 @@
 body{
- background-color: black;
+ background-color: #FFA500;
     padding: 0px;
     margin: 0px;
 }
@@ -40,7 +40,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 50px;
+    margin-block: 25px;
     gap: 400px;
 
     .text{
@@ -68,7 +68,7 @@ header{
    
 
     .iphone{
-        width: 250px;
+        width: 220px;
         object-fit: cover;
     }
 }
@@ -205,7 +205,7 @@ header{
 
    .body{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding-block: 50px;
     padding-inline: 20px;
    
