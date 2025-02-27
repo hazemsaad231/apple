@@ -17,9 +17,9 @@ window.onload = function() {
 
 function setBackground(color, imagePath) {
     document.body.style.background = color;
+    image.src = imagePath;
     localStorage.setItem("backgroundColor", color);
     localStorage.setItem("backgroundImage", imagePath);
-    image.src = imagePath;
 }
 
 function ap1() {
