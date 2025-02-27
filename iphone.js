@@ -7,8 +7,10 @@ let iphone5 = document.querySelector("#ipone5")
 
 
 window.onload = function() {
+    
     const savedColor = localStorage.getItem("backgroundColor");
     const savedImage = localStorage.getItem("backgroundImage");
+
     if (savedColor, savedImage) {
         document.body.style.background = savedColor;
         image.src = savedImage;
